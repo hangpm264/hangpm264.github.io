@@ -1,0 +1,88 @@
+/*Import common CSS styles*/
+
+@import url(../styles/common.css);
+
+/*Slogan*/
+
+.slogan {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Header*/
+
+.header-view {
+    display: flex;
+    justify-content: center;
+}
+
+.header-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+    text-align: center;
+}
+
+.author {
+    font-family: 'EB Garamond', serif;
+    text-emphasis-style: italic;
+}
+
+
+/*Main layout*/
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+}
+
+.item3 {
+    grid-area: advert;
+    padding: 30px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 auto);
+    grid-gap: 10px;
+    grid-template-areas: "header" "content" "advert";
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2 auto);
+        grid-gap: 10px;
+        grid-template-areas: "header advert" "content advert";
+    }
+}
+
+
+/*Image*/
+
+.cover-image {
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 20px;
+}
+
+.reference-image {
+    float: right;
+    padding: 20px;
+}
+
+
+/*Footer*/
+
+.footer-view {
+    text-align: right;
+}

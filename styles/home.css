@@ -1,0 +1,40 @@
+/*Import common CSS styles*/
+
+@import url(../styles/common.css);
+
+/*Slogan*/
+
+.slogan {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Responsive for Slogan & Banner*/
+
+@media (max-width: 768px) {
+    .banner {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .slogan {
+        position: absolute;
+        top: 8vw;
+        left: 4vw;
+        font-size: 7vw;
+        color: white;
+        font-size: bold;
+    }
+}
