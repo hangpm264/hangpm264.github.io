@@ -21,11 +21,13 @@
         }
         /*$(function() {
             $('#div1').load('short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html #content-displayed-in-home');
-        });*/
-        extract_content('div1','short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html', 'content-displayed-in-home')
+        });
+        extract_content('div1','short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html', 'content-displayed-in-home')*/
+        var fs = require('fs');
+        var files = fs.readdirSync('short_review/');
+        $('#div1').load(console.log(files))
     </script>
-</head>
-
+</head> 
 <body>
     <div class="banner"><img alt="banner" src="images/banner.jpg"></div>
     <div class="slogan">
