@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="../styles/short_review.css">
     
     <script>
-        function extract_content(paste_range, source_address) {
+        function extract_content(paste_range, source_address, source_range) {
             $(function() {
-                $('#' + paste_range).load(source_address);
+                $('#' + paste_range).load(source_address + ' #' + source_range);
             });
         }
         var short_review_list = [
@@ -32,7 +32,7 @@
         ];
         
         for (var i=0; i < short_review_list.length; i++) {
-            extract_content('short_div' + i, short_review_list[i] + '/content.html');
+            $(#short_review_content").append(extract_content('short_div' + i, short_review_list[i] + '/content.html', 'main-container'));
         }
         /*$(function() {
             $('#div1').load('short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html #content-displayed-in-home');
@@ -67,7 +67,7 @@
     <div class="main-container">        
         <main class="item2">
             <div class="container">
-                <div id="short_div0"></div>
+                <div id="short_review_content"></div>
                 <div id="short_div1"></div>
             </div>
         </main>        
