@@ -22,13 +22,21 @@
         /*$(function() {
             $('#div1').load('short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html #content-displayed-in-home');
         });
-        extract_content('div1','short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html', 'content-displayed-in-home')*/
-        $(document).ready(function () {
-  $.get("short_review/", function(data) {
+        extract_content('div1','short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html', 'content-displayed-in-home')*/       
+    </script>
+    
+    
+    
+    <script type="text/javascript">
+$(document).ready(function () {
+  $.get("dat/", function(data) {
     $("#files").append(data);
   });
 });
-    </script>
+</script>
+    
+    
+    
 </head> 
 <body>
     <div class="banner"><img alt="banner" src="images/banner.jpg"></div>
