@@ -23,9 +23,11 @@
             $('#div1').load('short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html #content-displayed-in-home');
         });
         extract_content('div1','short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html', 'content-displayed-in-home')*/
-        var fs = require('fs');
-        var files = fs.readdirSync('short_review/');
-        $('#div1').load(files)
+        $(document).ready(function () {
+  $.get("short_review/", function(data) {
+    $("#files").append(data);
+  });
+});
     </script>
 </head> 
 <body>
@@ -58,6 +60,9 @@
 
     <div class="main-container">
         <div id="div1">
+
+        </div>
+        <div id="files">
 
         </div>
 
