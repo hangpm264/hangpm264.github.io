@@ -86,3 +86,8 @@
 .footer-view {
     text-align: right;
 }
+
+/*Short-review-index style*/
+[id*=#short_div] {
+    
+}
