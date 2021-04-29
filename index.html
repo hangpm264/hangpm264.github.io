@@ -18,7 +18,12 @@
             $(function() {
                 $('#' + paste_range).load(source_address + ' #' + source_range);
             });
-        }
+        };
+        function get_image(des_img, source_address, source_img) {
+            $(function() {
+                $('#' + des_img).attr(source_address + ' #' + source_range);
+            });
+        };
         var short_review_list = [
             '202104008_21-bai-hoc-cho-the-ky-21',
             '202104007_homo-deus',
@@ -39,11 +44,11 @@
             extract_content('short_div' + i, 'short_review/' + short_review_list[i] + '/content.html', 'content-displayed-in-home');
         };
         
-        for (var i=0; i < short_review_list.length; i++) {
-            $(function() {
-                $(#'short_card_image' + i).attr("src",'images/banner.jpeg'>);
-            });
-        };
+        var url = 'https://avatarfiles.alphacoders.com/822/82242.png';
+ 
+$(document).ready(function() {
+    $(`<img src='${url}'>`).appendTo('#short_card_image0');
+});
         /*$(function() {
             $('#div1').load('short_review/202104001_ba-toi-da-tu-tu-nho-di/content.html #content-displayed-in-home');
         });
