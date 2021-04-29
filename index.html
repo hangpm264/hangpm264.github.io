@@ -19,13 +19,15 @@
                 $('#' + paste_range).load(source_address + ' #' + source_range);
             });
         };
-        function get_image(des_img, source_address) {
-            var img = new Image();
-            img.src = source_address;
+        
+        function get_image(des_img, source_img) {
             $(function() {
-                $('#' + des_img).load(img);
-            });            
+            var img = $('<img />', {src : source_img});
+            img.appendTo('#' + des_img);
+        });
         };
+        
+        
         var short_review_list = [
             '202104008_21-bai-hoc-cho-the-ky-21',
             '202104007_homo-deus',
@@ -95,6 +97,7 @@ $(document).ready(function() {
             This is the 1st part
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div><img id="short_card_image7">
+              
             </div>
             
             
