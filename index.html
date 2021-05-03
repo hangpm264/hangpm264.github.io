@@ -21,8 +21,12 @@
         }
         
         function get_image(des_img, source_img) {            
-            document.getElementById(des_img).src = source_img
+            document.getElementById(des_img).src = source_img;
         }        
+        
+        function change_link(des_link, source_link) {            
+            document.getElementById(des_link).href = source_link;
+        }  
     </script>
     
     
@@ -87,7 +91,7 @@
                                     <img class="card-img-top" id ="short_card_image0" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div0"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button0" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +102,7 @@
                                     <img class="card-img-top" id ="short_card_image1" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div1"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button1" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +113,7 @@
                                     <img class="card-img-top" id ="short_card_image2" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div2"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button2" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +131,7 @@
                                     <img class="card-img-top" id ="short_card_image3" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div3"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button3" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +142,7 @@
                                     <img class="card-img-top" id ="short_card_image4" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div4"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button4" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +153,7 @@
                                     <img class="card-img-top" id ="short_card_image5" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div5"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button5" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +171,7 @@
                                     <img class="card-img-top" id ="short_card_image6" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div6"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button6" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +182,7 @@
                                     <img class="card-img-top" id ="short_card_image7" src="">
                                     <div class="card-body">
                                         <p class="card-text" id="short_div7"></p>
-                                        <a class="btn btn-primary" href="#">Button</a>
+                                        <a class="btn btn-light" id="short_card_button7" href="#">Đọc tiếp</a>
                                     </div>
                                 </div>
                             </div>
@@ -223,6 +227,7 @@
         for (var i=6; i < short_review_list.length + 1; i++) {
             extract_content('short_div' + i, 'short_review/' + short_review_list[i] + '/content.html', 'content-displayed-in-home');
             get_image('short_card_image' + i,  'short_review/' + short_review_list[i] + '/images/card.jpg');
+            change_link('short_card_button' + i, 'short_review/' + short_review_list[i] + '/content.html');
                        
         };                        
             </script>
