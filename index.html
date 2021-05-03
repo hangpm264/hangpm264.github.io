@@ -60,32 +60,11 @@
     <div class="main-container">
         <div id="short-review">
             This is the 1st part            
-            <script>
-                                
-        var short_review_list = [
-            '202104008_21-bai-hoc-cho-the-ky-21',
-            '202104007_homo-deus',
-            '202104006_sapiens',
-            '202104005_va_roi_nui_vong',
-            '202104004_ngan-mat-troi-ruc-ro', 
-            '202104003_sao-chung-ta-lai-ngu', 
-            '202104002_nang-tien-ca', 
-            '202104001_ba-toi-da-tu-tu-nho-di'
-        ];
-        var long_review_list = [
-            '202104004_tim-minh-trong-the-gioi-hau-tuoi-tho',
-            '202104003_maye-musk',
-            '202104002_suoi-nguon',
-            '202104001_sapiens'
-        ];
-        for (var i=6; i < short_review_list.length; i++) {
-            extract_content('short_div' + i, 'short_review/' + short_review_list[i] + '/content.html', 'content-displayed-in-home');
-            get_image('short_card_image' + i,  'short_review/' + short_review_list[i] + '/images/card.jpg');
-                       
-        };                        
-            </script>
+            
             
             <img id="short_card_image6" src="">
+            
+            
                         
             <!--Carousel-->
             <div id="multiple-short-review-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -226,6 +205,36 @@
             
             
         </div>
+    
+        <!--Script___________________________________________-->
+        <script>
+                                
+        var short_review_list = [
+            '202104008_21-bai-hoc-cho-the-ky-21',
+            '202104007_homo-deus',
+            '202104006_sapiens',
+            '202104005_va_roi_nui_vong',
+            '202104004_ngan-mat-troi-ruc-ro', 
+            '202104003_sao-chung-ta-lai-ngu', 
+            '202104002_nang-tien-ca', 
+            '202104001_ba-toi-da-tu-tu-nho-di'
+        ];
+        var long_review_list = [
+            '202104004_tim-minh-trong-the-gioi-hau-tuoi-tho',
+            '202104003_maye-musk',
+            '202104002_suoi-nguon',
+            '202104001_sapiens'
+        ];
+        for (var i=6; i < short_review_list.length; i++) {
+            extract_content('short_div' + i, 'short_review/' + short_review_list[i] + '/content.html', 'content-displayed-in-home');
+            get_image('short_card_image' + i,  'short_review/' + short_review_list[i] + '/images/card.jpg');
+                       
+        };                        
+            </script>
+        <!--End of Script___________________________________________-->
+    
+    
+    
 
         <div id="long-review">
             This is the 2nd part
