@@ -22,6 +22,7 @@
 /*Long-card-images*/
 
 [id*="long_card_image"] {
+    width: 100%;
     height: auto;
 }
 
