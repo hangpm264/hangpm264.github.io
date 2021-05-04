@@ -177,12 +177,7 @@
             '202104002_nang-tien-ca', 
             '202104001_ba-toi-da-tu-tu-nho-di'
         ];
-        var long_review_list = [
-            '202104004_tim-minh-trong-the-gioi-hau-tuoi-tho',
-            '202104003_maye-musk',
-            '202104002_suoi-nguon',
-            '202104001_sapiens'
-        ];
+
         for (var i=0; i < short_review_list.length + 1; i++) {
             extract_content('short_div' + i, 'short_review/' + short_review_list[i] + '/content.html', 'content-displayed-in-home');
             get_image('short_card_image' + i,  'short_review/' + short_review_list[i] + '/images/card.jpg');
@@ -197,7 +192,83 @@
 
         <div id="long-review">
             <div class="heading" id="long-review-title">Long review</div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+                <!--Single item-->
+                <div class="col-md-12">
+                    <div class="card border-light mb-0">
+                        <div class="row card-body">
+                            <div class="col-md-8">
+                                <h4 class="card-title" id="long_card_title0"></h4>
+                                <p class="card-text" id="long_div0"></p>
+                                <a class="btn btn-light" id="long_card_button0" href="#">Button</a>
+                            </div>
+                            <img class="col-md-4" id ="long_card_image0" src="">
+                        </div>
+                    </div>                    
+                </div>
+            
+                <!--Single item-->
+                <div class="col-md-12">
+                    <div class="card border-light mb-1">
+                        <div class="row card-body">
+                            <div class="col-md-8">
+                                <h4 class="card-title" id="long_card_title1"></h4>
+                                <p class="card-text" id="long_div1"></p>
+                                <a class="btn btn-light" id="long_card_button1" href="#">Button</a>
+                            </div>
+                            <img class="col-md-4" id ="long_card_image1" src="">
+                        </div>
+                    </div>                    
+                </div>
+            
+                <!--Single item-->
+                <div class="col-md-12">
+                    <div class="card border-light mb-2">
+                        <div class="row card-body">
+                            <div class="col-md-8">
+                                <h4 class="card-title" id="long_card_title2"></h4>
+                                <p class="card-text" id="long_div2"></p>
+                                <a class="btn btn-light" id="long_card_button2" href="#">Button</a>
+                            </div>
+                            <img class="col-md-4" id ="long_card_image2" src="">
+                        </div>
+                    </div>                    
+                </div>
+            
+                <!--Single item-->
+                <div class="col-md-12">
+                    <div class="card border-light mb-3">
+                        <div class="row card-body">
+                            <div class="col-md-8">
+                                <h4 class="card-title" id="long_card_title3"></h4>
+                                <p class="card-text" id="long_div3"></p>
+                                <a class="btn btn-light" id="long_card_button3" href="#">Button</a>
+                            </div>
+                            <img class="col-md-4" id ="long_card_image3" src="">
+                        </div>
+                    </div>                    
+                </div>
+            
+        <!--Script___________________________________________-->
+        <script>
+            
+        var long_review_list = [
+            '202104004_tim-minh-trong-the-gioi-hau-tuoi-tho',
+            '202104003_maye-musk',
+            '202104002_suoi-nguon',
+            '202104001_sapiens'
+        ];
+            
+        for (var i=0; i < long_review_list.length + 1; i++) {
+            extract_content('long_card_title' + i, 'long_review/' + long_review_list[i] + '/content.html', 'title-displayed-in-home');
+            extract_content('long_div' + i, 'long_review/' + long_review_list[i] + '/content.html', 'content-displayed-in-home');
+            get_image('long_card_image' + i,  'long_review/' + long_review_list[i] + '/images/card.jpg');
+            change_link('long_card_button' + i, 'long_review/' + long_review_list[i] + '/content.html');
+                       
+        };                        
+            </script>
+        <!--End of Script___________________________________________-->
+            
         </div>
 
         <div id="vlog">
