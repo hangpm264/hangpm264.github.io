@@ -18,6 +18,11 @@
     font-size: 5vw;
 }
 
+/*Long-card-images*/
+
+[id*="long_card_image"] {
+    height: auto;
+}
 
 /*Responsive for Slogan & Banner*/
 
