@@ -71,3 +71,10 @@
     background: #bb0000;
     color: white;
 }
+
+/*End of section*/
+
+.section-end {
+    padding-bottom: 20px;
+    border-bottom: solid 2px lightsalmon;
+}
